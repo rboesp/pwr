@@ -1,1 +1,12 @@
+.main-content-container {
+    display: flex;
+    margin: 0;
+}
 
+div.no-padding {
+    padding: 0;
+}
+
+div.vertical {
+    height: 100vh;
+}
