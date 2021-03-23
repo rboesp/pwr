@@ -54,6 +54,11 @@ div.fourby {
     /* border-width: 4px; */
 }
 
+.icons {
+    height: 100px;
+    width: 100px;
+}
+
 @media (min-width: 1200px) {
     div.sidenav-height {
         height: 100vh;
