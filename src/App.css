@@ -32,6 +32,11 @@ div.no-padding {
     height: 50%;
 }
 
+.full-height-width {
+    width: 100%;
+    width: 100%;
+}
+
 .vertical {
     height: 100vh;
 }
