@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return <>
       <div className="main-content-container vertical ">
-        <Container fluid className='p-0 vertical border border-danger'>
+        <Container fluid className='p-0 vertical'>
           <Row noGutters className=''>
             <Col 
               // xs={12} 

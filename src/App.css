@@ -1,3 +1,12 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
 .main-content-container {
     display: flex;
     margin: 0;
@@ -11,15 +20,19 @@ div.no-padding {
     height: 25%;
 }
 
-div.full-height {
+.three-quarter-height {
+    height: 75%;
+}
+
+.full-height {
     height: 100%;
 }
 
-div.half-height {
+.half-height {
     height: 50%;
 }
 
-div.vertical {
+.vertical {
     height: 100vh;
 }
 
