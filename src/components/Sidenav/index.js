@@ -35,15 +35,16 @@ export default class Sidenav extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div id='navbarSupportedContent' className='full-height-width'>
                             <div className='border full-height-width d-flex justify-content-center'>
-                                <div className='d-flex justify-content-center align-items-start flex-column'>
-                                    {
-                                    this.state.nav_options.map(
-                                        option => {
-                                            console.log(option);
-                                            return <SideOption name={option.name} iconUrl={option.value}></SideOption>
-                                        })
-                                    }
-                                    
+                                <div className='d-flex flex-column align-items-center full-width'>
+                                    <div className='border border-info full-width'>
+                                        {
+                                        this.state.nav_options.map(
+                                            option => {
+                                                console.log(option);
+                                                return <SideOption name={option.name} iconUrl={option.value}></SideOption>
+                                            })
+                                        }
+                                    </div>                                  
                                 </div>
                             </div>
                         </div> 

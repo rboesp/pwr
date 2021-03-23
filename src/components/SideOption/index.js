@@ -3,14 +3,14 @@ import React, { Component } from 'react'
 export default class SideOption extends Component {
     render() {
         return (
-            <div className='d-flex justify-content-space-around'>
-                <div className="">
+            <div className='p-2 border border-info d-flex justify-content-center'>
+                <div className="figure-container">
                     <figure className=''>
                         <img className='icons' src={this.props.iconUrl} alt="sidenav option icon"></img>
                     </figure>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <p className=''>
+                    <p className='p-1'>
                         {this.props.name}
                     </p>
                 </div>
