@@ -10,14 +10,15 @@ class App extends React.Component {
 
   render() {
     return <>
-      <div className="main-content-container">
-        <Container fluid className='p-0'>
-          <Row noGutters>
+      <div className="main-content-container vertical ">
+        <Container fluid className='p-0 vertical border border-danger'>
+          <Row noGutters className=''>
             <Col 
               xs={12} 
               sm={3} 
               md={4} 
               lg={4} 
+              className=''
             >
               <Sidenav/>
             </Col>
@@ -26,6 +27,7 @@ class App extends React.Component {
               sm={9} 
               md={8} 
               lg={8}
+              className='full-viewport'
             >
               <MainContent/>
             </Col>
