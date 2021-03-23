@@ -45,6 +45,10 @@ div.no-padding {
     height: 100vh;
 }
 
+.quarter-viewport {
+    height: 25vh;
+}
+
 div.full-viewport {
     height: 100vh;
 }
@@ -63,8 +67,20 @@ div.fourby {
     width: 100px;
 }
 
+.boobe {
+    height: 600px;
+    /* width: fit-content; */
+}
+
 @media (min-width: 1200px) {
     div.sidenav-height {
         height: 100vh;
+    }
+    .overflow {
+        overflow-y: scroll;
+    }
+    .boobe {
+        width: 100%;
+        /* height: 500px; */
     }
 }

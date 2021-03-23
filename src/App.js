@@ -16,8 +16,8 @@ class App extends React.Component {
             <Col 
               // xs={12} 
               // sm={12} 
-              // md={2} 
-              lg={3} 
+              // md={4} 
+              lg={5} 
               className=''
             >
               <Sidenav/>
@@ -27,7 +27,7 @@ class App extends React.Component {
               // sm={9} 
               // md={9} 
               // lg={9}
-              className='full-viewport'
+              className='full-viewport overflow'
             >
               <MainContent/>
             </Col>

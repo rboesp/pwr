@@ -29,14 +29,14 @@ export default class Sidenav extends Component {
     render() {
         return (
             <>
-                <div className='sidenav-height d-flex flex-column justify-content-center'>
+                <div className='bg-dark sidenav-border sidenav-height d-flex flex-column justify-content-center'>
                     <Navbar expand="lg" className="">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div id='navbarSupportedContent' className='full-height-width'>
-                            <div className='border full-height-width d-flex justify-content-center'>
+                            <div className='full-height-width d-flex justify-content-center'>
                                 <div className='d-flex flex-column align-items-center full-width'>
-                                    <div className='border border-info full-width'>
+                                    <div className='full-width'>
                                         {
                                         this.state.nav_options.map(
                                             option => {
