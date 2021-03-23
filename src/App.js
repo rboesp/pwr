@@ -16,7 +16,7 @@ class App extends React.Component {
             <Col 
               // xs={12} 
               // sm={12} 
-              md={2} 
+              // md={2} 
               lg={3} 
               className=''
             >

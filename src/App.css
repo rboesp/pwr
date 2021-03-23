@@ -27,9 +27,9 @@ div.full-viewport {
     height: 100vh;
 }
 
-div.sidenav-height {
-    height: 100%;
-}
+/* div.sidenav-height {
+     height: 100%; 
+} */
 
 div.fourby {
     border: 4px dashed lightseagreen;
