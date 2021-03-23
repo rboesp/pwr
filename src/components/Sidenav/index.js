@@ -7,8 +7,8 @@ export default class Sidenav extends Component {
     render() {
         return (
             <>
-                <div className='border border-success'>
-                    <Navbar bg="light" expand="lg" className="">
+                <div className='border border-success sidenav-height'>
+                    <Navbar expand="lg" className="">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div id='navbarSupportedContent' className='border border-warning'>

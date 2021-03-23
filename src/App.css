@@ -27,7 +27,17 @@ div.full-viewport {
     height: 100vh;
 }
 
+div.sidenav-height {
+    height: 100%;
+}
+
 div.fourby {
     border: 4px dashed lightseagreen;
     /* border-width: 4px; */
+}
+
+@media (min-width: 1200px) {
+    div.sidenav-height {
+        height: 100vh;
+    }
 }

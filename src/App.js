@@ -14,19 +14,19 @@ class App extends React.Component {
         <Container fluid className='p-0 vertical border border-danger'>
           <Row noGutters className=''>
             <Col 
-              xs={12} 
-              sm={3} 
-              md={4} 
-              lg={4} 
+              // xs={12} 
+              // sm={12} 
+              md={2} 
+              lg={3} 
               className=''
             >
               <Sidenav/>
             </Col>
             <Col
-              xs={12} 
-              sm={9} 
-              md={8} 
-              lg={8}
+              // xs={12} 
+              // sm={9} 
+              // md={9} 
+              // lg={9}
               className='full-viewport'
             >
               <MainContent/>
