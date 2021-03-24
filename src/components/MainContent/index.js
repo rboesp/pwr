@@ -26,7 +26,7 @@ export default class MainContent extends Component {
                         <Bio />
                     </div>
                     <div className='ml-4 '>
-                        <h1 className='size p-3'>Skills Breakdown</h1>
+                        <h1 className='size p-3 skills-header'>Skills Breakdown</h1>
                         <Row className='full-width border border-danger'>
                         {
                             this.state.graphUrls.map(graphUrl => {
