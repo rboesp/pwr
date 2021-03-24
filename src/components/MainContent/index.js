@@ -25,7 +25,7 @@ export default class MainContent extends Component {
                     <div className='m-3'>
                         <Bio />
                     </div>
-                    <div className='ml-4 '>
+                    <div className='ml-4 mt-5'>
                         <h1 className='size p-3 skills-header'>Skills Breakdown</h1>
                         <Row className='full-width border border-danger'>
                         {
