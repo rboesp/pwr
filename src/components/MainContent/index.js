@@ -5,7 +5,7 @@ export default class MainContent extends Component {
     render() {
         return (
             <main className=' full-height main-content'>
-                <figure className='border border-info p-0 m-0 border'>
+                <figure className='p-0 m-0 border'>
                     <img className='full-height-width' src={logo} alt=""></img>
                 </figure>
                 <div className='bg-light three-quarter-height'>

@@ -17,7 +17,7 @@ class App extends React.Component {
               // xs={12} 
               // sm={12} 
               // md={4} 
-              lg={5} 
+              lg={4} 
               className=''
             >
               <Sidenav/>
