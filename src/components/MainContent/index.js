@@ -27,7 +27,7 @@ export default class MainContent extends Component {
 
             default:
                 return <Homepage></Homepage>
-                break;
+            break;
         }
     }
 
