@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import './style.css'
 
 export default class SideOption extends Component {
+    handle = () => {
+        console.log('handled')
+    }
     render() {
         return (
-            <div className='p-2 d-flex justify-content-center'>
+            <div className='p-2 sideBtns d-flex justify-content-center' onClick={this.handle}>
                 <div className="figure-container">
                     <figure className=''>
                         <img className='icons' src={this.props.iconUrl} alt="sidenav option icon"></img>
