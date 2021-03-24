@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import './style.css'
 
 export default class SideOption extends Component {
-    handle = () => {
-        console.log('handled')
+    handle = (e) => {
+        const targetName = e.target.textContent
+        this.props.switchPage(targetName)
     }
     render() {
         return (

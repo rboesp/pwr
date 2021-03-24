@@ -41,7 +41,7 @@ export default class Sidenav extends Component {
                                         this.state.nav_options.map(
                                             option => {
                                                 console.log(option);
-                                                return <SideOption name={option.name} iconUrl={option.value}></SideOption>
+                                                return <SideOption switchPage={this.props.switchPage} name={option.name} iconUrl={option.value}></SideOption>
                                             })
                                         }
                                     </div>                                  

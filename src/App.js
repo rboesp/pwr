@@ -6,7 +6,13 @@ import { Container, Col, Row } from "react-bootstrap";
 import Sidenav from './components/Sidenav'
 
 class App extends React.Component {
-  state = {}
+  state = {
+    currentPage: 'Home'
+  }
+
+  switchPage = page => {
+      this.setState({currentPage: page})
+  }
 
   render() {
     return <>
@@ -20,7 +26,7 @@ class App extends React.Component {
               lg={3} 
               className=''
             >
-              <Sidenav/>
+              <Sidenav switchPage={this.switchPage}/>
             </Col>
             <Col
               // xs={12} 
@@ -29,7 +35,9 @@ class App extends React.Component {
               // lg={9}
               className='full-viewport overflow'
             >
-              <MainContent/>
+              <MainContent 
+                currentPage={this.state.currentPage}
+                />
             </Col>
           </Row>
         </Container>
