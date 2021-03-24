@@ -4,6 +4,7 @@ import Graph from '../Graph'
 import firstGraph from '../../graphs/first/Skills5_b.png'
 import secondGraph from '../../graphs/second/Skills4_c.png'
 import { Col, Row } from 'react-bootstrap'
+import Bio from '../Bio'
 
 export default class MainContent extends Component {
 
@@ -21,11 +22,11 @@ export default class MainContent extends Component {
                     <img className='full-width' src={logo} alt=""></img>
                 </figure>
                 <div className='bg-light'>
-                    <div className='bio quarter-height'>
-                        <h1>Bio</h1>
+                    <div className='m-3'>
+                        <Bio />
                     </div>
-                    <div className='p-1'>
-                        <h1>Skills Breakdown</h1>
+                    <div className='ml-4 '>
+                        <h1 className='size p-3'>Skills Breakdown</h1>
                         <Row className='full-width border border-danger'>
                         {
                             this.state.graphUrls.map(graphUrl => {
