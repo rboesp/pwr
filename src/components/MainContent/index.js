@@ -30,7 +30,7 @@ export default class MainContent extends Component {
                         {
                             this.state.graphUrls.map(graphUrl => {
                                 return (
-                                    <Col className='border border-info' lg={6}>
+                                    <Col className='border border-info' xs={12} sm={12} md={12} lg={6}>
                                         <Graph graphUrl={graphUrl}/>
                                     </Col>
                                 )

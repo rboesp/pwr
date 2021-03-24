@@ -71,7 +71,7 @@ div.fourby {
     width: 100px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     div.sidenav-height {
         height: 100vh;
     }
