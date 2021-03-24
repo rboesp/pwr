@@ -26,12 +26,12 @@ export default class MainContent extends Component {
                         <Bio />
                     </div>
                     <div className='ml-4 mt-5'>
-                        <h1 className='size p-3 skills-header'>Skills Breakdown</h1>
-                        <Row className='full-width border border-danger'>
+                        <h3 className='p-3 '>Skills Breakdown</h3>
+                        <Row className='full-width '>
                         {
                             this.state.graphUrls.map(graphUrl => {
                                 return (
-                                    <Col className='border border-info' xs={12} sm={12} md={12} lg={6}>
+                                    <Col className='' xs={12} sm={12} md={12} lg={6}>
                                         <Graph graphUrl={graphUrl}/>
                                     </Col>
                                 )

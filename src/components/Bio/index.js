@@ -44,9 +44,9 @@ export default class Bio extends Component {
                         </div>
                     </div>
                     <div className='badges mt-5'>
-                        <h1>
-                        Technologies I like to work with:
-                        </h1>
+                        <h3>
+                        Technologies I like to work with
+                        </h3>
                         <Pill name='Angular' backgroundColor='#dd0031' color='white' src={this.pic}/>
                     </div>
                 </div>
