@@ -24,23 +24,31 @@ export default class MainContent extends Component {
                     <div className='bio quarter-height'>
                         <h1>Bio</h1>
                     </div>
-                    <div className='border border-danger'>
+                    <div className='p-1'>
                         <h1>Skills Breakdown</h1>
-                        <Row>
-                            <Col lg={6}>
-
-                            </Col>
-                            <Col >
-
-                            </Col>
+                        <Row className='full-width border border-danger'>
+                        {
+                            this.state.graphUrls.map(graphUrl => {
+                                return (
+                                    <Col className='border border-info' lg={6}>
+                                        <Graph graphUrl={graphUrl}/>
+                                    </Col>
+                                )
+                            })
+                        }  
                         </Row>
-                        <div className='d-flex flex-row'>
+                        {/* <div className='border d-flex flex-row justify-content-around align-items-center'>
                             {
                                 this.state.graphUrls.map(graphUrl => {
-                                    return <Graph graphUrl={graphUrl}/>
+                                    return (
+                                        <div >
+                                           
+                                            <Graph graphUrl={graphUrl}/>
+                                        </div>
+                                    )
                                 })
                             }
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </main>

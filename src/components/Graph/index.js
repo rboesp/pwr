@@ -6,7 +6,7 @@ export default class Graph extends Component {
         return (
             <div>
                 <figure>
-                    <img className='' src={this.props.graphUrl} ></img>
+                    <img className='graph' src={this.props.graphUrl} ></img>
                 </figure>
             </div>
         )
