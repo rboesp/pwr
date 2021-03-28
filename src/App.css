@@ -75,6 +75,10 @@ div.fourby {
     font-size: 3em;
 }
 
+.white {
+    color: whitesmoke;
+}
+
 @media (min-width: 992px) {
     div.sidenav-height {
         height: 100vh;
