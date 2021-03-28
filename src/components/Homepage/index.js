@@ -13,7 +13,22 @@ export default class Homepage extends Component {
         graphUrls : [
             firstGraph,
             secondGraph
-        ]
+        ],
+        imgText: [
+            {
+                first: 'Software',
+                second:'Developer'
+            }
+        ],
+        currentImgIndex: 0
+    }
+
+    getNextImg = num => {
+        this.setState({currentImgIndex: num})
+    }
+
+    getCurrentImg = () => {
+        return this.state.imgText[this.state.currentImgIndex]
     }
 
     render() {
@@ -21,7 +36,14 @@ export default class Homepage extends Component {
             <>
                 {/*my cover img here */}
                 <figure className='p-0 m-0 border'>
-                    <img className='full-width' src={CoverImg} alt=""></img>
+                    <div className='wrapper'>
+                    <div className="top-left">
+                        <h1>{this.getCurrentImg().first}</h1>
+                        <br/>
+                        <h1>{this.getCurrentImg().second}</h1>
+                    </div>
+                    <img className='full-width f' src={CoverImg} alt=""></img>
+                    </div>
                 </figure>
 
                 {/* about myself text */}
