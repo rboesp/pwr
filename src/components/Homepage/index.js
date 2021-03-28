@@ -18,12 +18,32 @@ export default class Homepage extends Component {
             {
                 first: 'Software',
                 second:'Developer'
+            },
+            {
+                first: 'Full-Stack',
+                second:'Developer'
+            },
+            {
+                first: 'Husband',
+                second:''
             }
         ],
-        currentImgIndex: 0
+        currentImgIndex: 0,
+        imgTextTimeShown: 10 //seconds long for testing, prod 3
     }
 
-    getNextImg = num => {
+    componentDidMount = () => {
+        let count = 0
+        setInterval(() => {
+            console.log('hey')
+            if(count === this.state.imgText.length-1) {
+                count = 0
+            }
+            this.showNextImgText(++count)
+        }, this.state.imgTextTimeShown*1000);
+    }
+
+    showNextImgText = num => {
         this.setState({currentImgIndex: num})
     }
 
