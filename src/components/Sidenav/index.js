@@ -33,7 +33,9 @@ export default class Sidenav extends Component {
                     <div className=' d-flex flex-column  full-height'>
                         <Navbar expand="lg" className="p-0 m-0 d-flex flex-column justify-content-between full-height border border-danger ">
                              <div className='border border-warning p-2'>
-                                <h1 className='p-0 text-center white'>Robert Boespflug</h1>
+                                <h3 className='p-0 text-center white'>Robert Boespflug</h3>
+                                <h6 className='p-0 text-center white'>Software Developer </h6>
+                                <h6 className='p-0 text-center white'>Seattle, WA</h6>
                             </div>
                             <div id="basic-navbar-nav" className='border border-info flex-grow-0 d-flex flex-column justify-content-around full-height full-width pt-5'>
                                 {/* <div id='navbarSupportedContent' className=' d-flex flex-column border justify-content-between'> */}

@@ -19,12 +19,19 @@ export default class Homepage extends Component {
     render() {
         return (
             <>
+                {/*my cover img here */}
                 <figure className='p-0 m-0 border'>
                     <img className='full-width' src={logo} alt=""></img>
                 </figure>
+
+                {/* about myself text */}
                 <div className='m-3'>
                     <Bio />
                 </div>
+
+                {/* should put pills here! (currently in Bio above) */}
+
+                {/* skills graphs */}
                 <div className='ml-4 mt-5'>
                     <h3 className='p-3 '>Skills Breakdown</h3>
                     <Row className='full-width '>
