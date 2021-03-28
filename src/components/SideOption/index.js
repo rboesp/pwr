@@ -15,9 +15,9 @@ export default class SideOption extends Component {
                     </figure>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <p className='p-1 option-names'>
+                    <h5 className='p-1 option-names'>
                         {this.props.name}
-                    </p>
+                    </h5>
                 </div>
             </div>
         )

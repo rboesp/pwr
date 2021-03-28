@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import  SideOption from "../SideOption/";
 import { Navbar, Nav } from 'react-bootstrap';
 import './style.css'
+import SideIcon from '../SideIcon';
 
 export default class Sidenav extends Component {
     state = {
@@ -17,11 +18,21 @@ export default class Sidenav extends Component {
             },
             {
             name: `Contact`,
-            value: `https://img.icons8.com/plasticine/${this.icon_size}/000000/contact-card.png`
+            value: `https://img.icons8.com/plasticine/${100}/000000/contact-card.png`
             },
             {
             name: `Resume`,
             value: `https://img.icons8.com/clouds/${this.icon_size}/000000/resume.png`
+            }
+        ],
+        icons: [
+            {
+                href: 'https://linkedin.com/in/robertboespflug',
+                src: 'https://img.icons8.com/color/100/000000/linkedin.png'
+            },
+            {
+                href: 'https://github.com/rboesp',
+                src: 'https://img.icons8.com/nolan/100/github.png' 
             }
         ]
     }
@@ -30,39 +41,33 @@ export default class Sidenav extends Component {
         return (
             <>
                 <div className='bg-dark  sidenav-border sidenav-height'>
-                    <div className=' d-flex flex-column  full-height'>
-                        <Navbar expand="lg" className="p-0 m-0 d-flex flex-column justify-content-between full-height border border-danger ">
-                             <div className='border border-warning p-2'>
+                    <div className='d-flex flex-column  full-height'>
+                        <Navbar expand="lg" className="p-0 m-0 d-flex flex-column justify-content-between full-height ">
+                             <div className=' p-2'>
                                 <h3 className='p-0 text-center white'>Robert Boespflug</h3>
                                 <h6 className='p-0 text-center white'>Software Developer </h6>
                                 <h6 className='p-0 text-center white'>Seattle, WA</h6>
                             </div>
-                            <div id="basic-navbar-nav" className='border border-info flex-grow-0 d-flex flex-column justify-content-around full-height full-width pt-5'>
-                                {/* <div id='navbarSupportedContent' className=' d-flex flex-column border justify-content-between'> */}
-                                    {/* hi */}
-                                    <div className=' full-height-width '>
-                                        <div className='  full-height-width d-flex justify-content-center'>
-                                            <div className='d-flex flex-column align-items-center full-width mb-5'>
-                                                <div className='full-width'>
-                                                    {
-                                                    this.state.nav_options.map(
-                                                        option => {
-                                                            console.log(option);
-                                                            return <SideOption switchPage={this.props.switchPage} name={option.name} iconUrl={option.value}></SideOption>
-                                                        })
-                                                    }
-                                                </div>
+                            <div id="basic-navbar-nav" className='flex-grow-0 d-flex flex-column justify-content-around full-height full-width pt-5'>
+                                <div className=' full-height-width '>
+                                    <div className='full-height-width d-flex justify-content-center'>
+                                        <div className='d-flex flex-column align-items-center full-width mb-5'>
+                                            <div className='full-width'>
+                                                {
+                                                this.state.nav_options.map(
+                                                    option => {
+                                                        return <SideOption switchPage={this.props.switchPage} name={option.name} iconUrl={option.value}></SideOption>
+                                                    })
+                                                }
                                             </div>
                                         </div>
                                     </div>
-                                    <div  id='navbarSupportedContent' className='border m-0 p-0 full-height d-flex justify-content-center align-items-center'>
-                                        <figure className='border text-center full-height-width'>
-                                            <img className='border'></img>
-                                        </figure>
-                                        <figure className='border text-center full-height-width'>
-                                            <img className='border'></img>
-                                        </figure>
-                                    </div>
+                                </div>
+                                <div className='m-0 p-0 full-height d-flex justify-content-center align-items-center'>
+                                    {
+                                        this.state.icons.map( icon => <SideIcon href={icon.href} src={icon.src} />)
+                                    }
+                                </div>
                             </div>
                         </Navbar>
                     </div>
