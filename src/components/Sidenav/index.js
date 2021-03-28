@@ -31,15 +31,14 @@ export default class Sidenav extends Component {
             <>
                 <div className='bg-dark  sidenav-border sidenav-height'>
                     <div className=' d-flex flex-column  full-height'>
-                        <Navbar expand="lg" className="p-4 m-0 d-flex flex-column justify-content-between full-height border border-danger ">
+                        <Navbar expand="lg" className="p-0 m-0 d-flex flex-column justify-content-between full-height border border-danger ">
                              <div className='border border-warning p-2'>
                                 <h1 className='p-0 text-center white'>Robert Boespflug</h1>
                             </div>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse id="basic-navbar-nav" className='border border-info flex-grow-0 d-flex flex-column justify-content-around full-height'>
+                            <div id="basic-navbar-nav" className='border border-info flex-grow-0 d-flex flex-column justify-content-around full-height full-width pt-5'>
                                 {/* <div id='navbarSupportedContent' className=' d-flex flex-column border justify-content-between'> */}
                                     {/* hi */}
-                                    <div className='border full-height-width '>
+                                    <div className=' full-height-width '>
                                         <div className='  full-height-width d-flex justify-content-center'>
                                             <div className='d-flex flex-column align-items-center full-width'>
                                                 <div className='full-width'>
@@ -58,7 +57,7 @@ export default class Sidenav extends Component {
                                         <h1 className='white text-center'>Hey there</h1>
                                     </div>
                                 {/* </div> */}
-                            </Navbar.Collapse>
+                            </div>
                         </Navbar>
                     </div>
                 </div>
