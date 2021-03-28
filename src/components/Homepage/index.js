@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
-import logo from '../../logo/logo.jpg'
+import CoverImg from '../../CoverImg/cover1.jpg'
 import Graph from '../Graph'
 import firstGraph from '../../graphs/first/Skills5_b.png'
 import secondGraph from '../../graphs/second/Skills4_c.png'
@@ -21,7 +21,7 @@ export default class Homepage extends Component {
             <>
                 {/*my cover img here */}
                 <figure className='p-0 m-0 border'>
-                    <img className='full-width' src={logo} alt=""></img>
+                    <img className='full-width' src={CoverImg} alt=""></img>
                 </figure>
 
                 {/* about myself text */}
