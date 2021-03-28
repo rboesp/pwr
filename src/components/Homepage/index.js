@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
-import CoverImg from '../../CoverImg/cover1.jpg'
+import CoverImg from '../../CoverImg/cover2.jpg'
 import Graph from '../Graph'
 import firstGraph from '../../graphs/first/Skills5_b.png'
 import secondGraph from '../../graphs/second/Skills4_c.png'
