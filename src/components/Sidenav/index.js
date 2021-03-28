@@ -40,7 +40,7 @@ export default class Sidenav extends Component {
                                     {/* hi */}
                                     <div className=' full-height-width '>
                                         <div className='  full-height-width d-flex justify-content-center'>
-                                            <div className='d-flex flex-column align-items-center full-width'>
+                                            <div className='d-flex flex-column align-items-center full-width mb-5'>
                                                 <div className='full-width'>
                                                     {
                                                     this.state.nav_options.map(
@@ -53,10 +53,14 @@ export default class Sidenav extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div  id='navbarSupportedContent' className='border m-0 p-0'>
-                                        <h1 className='white text-center'>Hey there</h1>
+                                    <div  id='navbarSupportedContent' className='border m-0 p-0 full-height d-flex justify-content-center align-items-center'>
+                                        <figure className='border text-center full-height-width'>
+                                            <img className='border'></img>
+                                        </figure>
+                                        <figure className='border text-center full-height-width'>
+                                            <img className='border'></img>
+                                        </figure>
                                     </div>
-                                {/* </div> */}
                             </div>
                         </Navbar>
                     </div>
