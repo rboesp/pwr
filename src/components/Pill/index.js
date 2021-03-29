@@ -46,7 +46,7 @@ export default class Pill extends Component {
                 <SVG 
                     height={24}
                     width={24}
-                    viewBox="0 0 256 272" 
+                    viewBox={this.props.pillData.viewBox} 
                     version="1.1" 
                     xmlns="http://www.w3.org/2000/svg" 
                     xmlnsXlink="http://www.w3.org/1999/xlink" 
