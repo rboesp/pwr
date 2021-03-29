@@ -3,16 +3,16 @@ import SVG from '../SVG'
 
 export default class Pill extends Component {
     getG = () => {
-        console.log(this.props)
+        console.log(this.props.pillData)
         return (
             <>
                 <g>
                     {
-                        this.props.d_s.map((d,i) => {
+                        this.props.pillData.d_s.map((d,i) => {
                             return (
                                 <path 
                                     d={d}
-                                    fill={this.props.fills[i]}>  
+                                    fill={this.props.pillData.fills[i]}>  
                                 </path>
                             )
                         })
@@ -26,11 +26,11 @@ export default class Pill extends Component {
             // <div className='badge rounded-pill badge-pill'>
                 <span className='badge rounded-pill font-exempt' style={
                     {
-                        backgroundColor: this.props.backgroundColor,
-                        color : this.props.color
+                        backgroundColor: this.props.pillData.bgColor,
+                        color : this.props.pillData.color
                     }
                 }
-                >{this.props.name}
+                >{this.props.pillData.name}
                 <SVG 
                     height={24}
                     width={24}
