@@ -6,14 +6,48 @@ import firstGraph from '../../graphs/first/Skills5_b.png'
 import secondGraph from '../../graphs/second/Skills4_c.png'
 import { Col, Row } from 'react-bootstrap'
 import Bio from '../Bio'
+import Pill from '../Pill'
+
+class PillOnPage {
+    constructor(name, bgColor, color, img, d_s, fills) {
+        this.name = name
+        this.bgColor = bgColor
+        this.color = color
+        this.img = img
+        this.d_s = d_s
+        this.fills = fills
+    }
+}
+
+const getD = name => {
+    switch (name) {
+        case 'Angular':
+            {
+                return ["M0.0996108949,45.522179 L125.908171,0.697276265 L255.103502,44.7252918 L234.185214,211.175097 L125.908171,271.140856 L19.3245136,211.971984 L0.0996108949,45.522179 Z", "M255.103502,44.7252918 L125.908171,0.697276265 L125.908171,271.140856 L234.185214,211.274708 L255.103502,44.7252918 L255.103502,44.7252918 Z", "M126.107393,32.27393 L126.107393,32.27393 L47.7136187,206.692607 L76.9992218,206.194553 L92.7377432,166.848249 L126.207004,166.848249 L126.306615,166.848249 L163.063035,166.848249 L180.29572,206.692607 L208.286381,207.190661 L126.107393,32.27393 L126.107393,32.27393 Z M126.306615,88.155642 L152.803113,143.5393 L127.402335,143.5393 L126.107393,143.5393 L102.997665,143.5393 L126.306615,88.155642 L126.306615,88.155642 Z"]
+            }
+            break;
+    
+        default:
+            break;
+    }
+}
+
+const getFills = name => {
+    switch (name) {
+        case 'Angular':
+            {
+                return ["#E23237", "#B52E31", "#FFFFFF"] 
+            }
+            break;
+    
+        default:
+            break;
+    }
+}
 
 export default class Homepage extends Component {
 
     state = {
-        graphUrls : [
-            firstGraph,
-            secondGraph
-        ],
         imgText: [
             {
                 first: 'Software',
@@ -33,7 +67,14 @@ export default class Homepage extends Component {
             }
         ],
         currentImgIndex: 0,
-        imgTextTimeShown: 3.5 //seconds long for testing, prod 3
+        imgTextTimeShown: 3.5, //seconds long for testing, prod 3
+        pills: [
+            new PillOnPage('Angular', '#dd0031', 'white', this.pic, getD('Angular'), getFills('Angular'))
+        ],
+        graphUrls : [
+            firstGraph,
+            secondGraph
+        ]
     }
 
     componentDidMount = () => {
@@ -71,15 +112,23 @@ export default class Homepage extends Component {
                 </figure>
 
                 {/* about myself text */}
-                <div className='m-3'>
+                <div className='bioArea m-3'>
                     <Bio />
                 </div>
 
-                {/* should put pills here! (currently in Bio above) */}
+                {/* pills area an heading*/}
+                <div className='skillsArea badges m-5'>
+                    <h2>
+                        Technologies I like to work with
+                    </h2>
+                    {
+                        this.state.pills.map(pill => <Pill name={pill.name} backgroundColor={pill.bgColor} color={pill.color} src={pill.img} d_s={pill.d_s} fills={pill.fills}/>)
+                    }
+                </div>
 
                 {/* skills graphs */}
-                <div className='ml-4 mt-5'>
-                    <h3 className='p-3 '>Skills Breakdown</h3>
+                <div className='graphArea ml-4 mt-5'>
+                    <h2 className='p-3 '>Skills Breakdown</h2>
                     <Row className='full-width '>
                     {
                         this.state.graphUrls.map(graphUrl => {
@@ -91,18 +140,6 @@ export default class Homepage extends Component {
                         })
                     }  
                     </Row>
-                    {/* <div className='border d-flex flex-row justify-content-around align-items-center'>
-                        {
-                            this.state.graphUrls.map(graphUrl => {
-                                return (
-                                    <div >
-                                    
-                                        <Graph graphUrl={graphUrl}/>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div> */}
                 </div>
             </>
         )

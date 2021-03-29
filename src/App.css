@@ -93,6 +93,9 @@ h4,
 span {
     font-family: "Trirong", serif;
 }
+.font-exempt {
+    font-family: "Rubik", sans-serif;
+}
 
 @media (min-width: 992px) {
     div.sidenav-height {

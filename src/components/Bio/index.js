@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Pill from '../Pill'
 
 export default class Bio extends Component {
     pic = () => {  
@@ -42,12 +41,6 @@ export default class Bio extends Component {
                                 the Seattle area.
                             </h5>
                         </div>
-                    </div>
-                    <div className='badges mt-5'>
-                        <h3>
-                        Technologies I like to work with
-                        </h3>
-                        <Pill name='Angular' backgroundColor='#dd0031' color='white' src={this.pic}/>
                     </div>
                 </div>
             </div>
