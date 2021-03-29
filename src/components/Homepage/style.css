@@ -8,6 +8,12 @@
 
 .top-left {
     position: absolute;
-    top: 5%;
-    left: 2%;
+    top: 20%;
+    left: 10%;
+}
+
+.top-left > * {
+    font-family: "Pacifico";
+    font-size: 3.5em;
+    /* font-weight: bold; */
 }

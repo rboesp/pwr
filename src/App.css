@@ -79,6 +79,21 @@ div.fourby {
     color: whitesmoke;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Gentium+Basic|Libre+Baskerville|Libre+Franklin|Proza+Libre|Rubik|Trirong&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+span {
+    font-family: "Trirong", serif;
+}
+
 @media (min-width: 992px) {
     div.sidenav-height {
         height: 100vh;

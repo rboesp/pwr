@@ -24,22 +24,26 @@ export default class Homepage extends Component {
                 second:'Developer'
             },
             {
+                first: 'Electronics',
+                second:'Nerd'
+            },
+            {
                 first: 'Husband',
                 second:''
             }
         ],
         currentImgIndex: 0,
-        imgTextTimeShown: 10 //seconds long for testing, prod 3
+        imgTextTimeShown: 3.5 //seconds long for testing, prod 3
     }
 
     componentDidMount = () => {
         let count = 0
+        this.showNextImgText(count++)
         setInterval(() => {
-            console.log('hey')
-            if(count === this.state.imgText.length-1) {
+            this.showNextImgText(count++)
+            if(count === this.state.imgText.length) {
                 count = 0
             }
-            this.showNextImgText(++count)
         }, this.state.imgTextTimeShown*1000);
     }
 
