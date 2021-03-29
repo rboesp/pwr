@@ -24,13 +24,25 @@ export default class Pill extends Component {
     render() {
         return (
             // <div className='badge rounded-pill badge-pill'>
-                <span className='badge rounded-pill font-exempt' style={
-                    {
-                        backgroundColor: this.props.pillData.bgColor,
-                        color : this.props.pillData.color
+                <span 
+                    className='badge rounded-pill font-exempt' 
+                    style={
+                        {
+                            backgroundColor: this.props.pillData.bgColor,
+                            color : this.props.pillData.color
+                        }
                     }
-                }
-                >{this.props.pillData.name}
+                >
+                <span 
+                    className='font-exempt' 
+                    style={
+                        {
+                            padding: "5px"
+                        }
+                    }
+                >
+                    {this.props.pillData.name}
+                </span>
                 <SVG 
                     height={24}
                     width={24}
