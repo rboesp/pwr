@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.f {
+.sendToBack {
     z-index: -1;
 }
 
