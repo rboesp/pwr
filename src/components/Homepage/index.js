@@ -101,10 +101,14 @@ export default class Homepage extends Component {
                     <h2>
                         Technologies I like to work with
                     </h2>
-                    <div className='badges'>
+                    <div className='badges d-flex'>
                     {
                         this.state.pills.map(
-                            pill => <Pill pillData={pill}/>
+                            pill => <>
+                                <div className='pillContainer m-1'>
+                                    <Pill pillData={pill}/>
+                                </div>
+                            </>
                         )
                     }
                     </div>
