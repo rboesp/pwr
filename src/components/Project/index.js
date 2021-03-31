@@ -22,8 +22,9 @@ export default class Project extends Component {
             pills
         } = details;
         return (
-            <Col xs={6} >
-                <div class="card-body border border-warning">
+            <Col xs={12} >
+                <div class="card-body border border-warning text-center m-3">
+                            <figure className=''>
                             <img className='card-img-top'
                                 style={
                                     {
@@ -32,10 +33,11 @@ export default class Project extends Component {
                                     }
                                 }
                             ></img>
+                            </figure>
                             <h5 class="card-title">
                                 {name}
                             </h5>
-                            <div className='d-flex'>
+                            <div className='d-flex justify-content-center'>
                                 {
                                     pills.map(
                                         pill => <>
@@ -46,7 +48,7 @@ export default class Project extends Component {
                                     )
                                 }
                             </div>
-                            <p class="card-text">
+                            <p class="card-text ">
                                 {desc}
                             </p>
                             <a href={img} target="_blank" class="badge">
