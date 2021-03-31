@@ -37,6 +37,18 @@ export default class Project extends Component {
     }
 
     render() {
+        const {
+            details,
+          } = this.props;
+        const {
+            name,
+            img,
+            desc,
+            urlBlurb,
+            url,
+            utilized
+        } = details;
+        const { pills } = this.state;
         return (
         <div class="row m-5">
             <div class="card-body border border-warning col-8">
@@ -49,11 +61,11 @@ export default class Project extends Component {
                     }
                 ></img>
                 <h5 class="card-title">
-                    {this.props.details.name}
+                    {name}
                 </h5>
                 <div className='d-flex'>
                     {
-                        this.state.pills.map(
+                        pills.map(
                             pill => <>
                                 <div className='pillContainer m-1'>
                                     <Pill pillData={pill}/>
@@ -63,10 +75,10 @@ export default class Project extends Component {
                     }
                 </div>
                 <p class="card-text">
-                    {this.props.details.desc}
+                    {desc}
                 </p>
-                <a href={this.props.details.img} target="_blank" class="badge">
-                    Check it out!
+                <a href={img} target="_blank" class="badge">
+                    {urlBlurb}
                 </a>
             </div>
         </div>

@@ -7,7 +7,7 @@ import Sidenav from './components/Sidenav'
 
 class App extends React.Component {
   state = {
-    currentPage: 'Home'
+    currentPage: 'Projects'
   }
 
   switchPage = page => {
