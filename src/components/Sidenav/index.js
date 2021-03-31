@@ -44,7 +44,7 @@ export default class Sidenav extends Component {
                     <div className='d-flex flex-column  full-height'>
                         <Navbar expand="lg" className="p-0 m-0 d-flex flex-column justify-content-between full-height ">
                              <div className=' p-2'>
-                                <h3 className='p-0 text-center white'>Robert Boespflug</h3>
+                                <h1 className='p-0 text-center white'>Robert Boespflug</h1>
                                 <h6 className='p-0 text-center white'>Software Developer </h6>
                                 <h6 className='p-0 text-center white'>Seattle, WA</h6>
                             </div>
