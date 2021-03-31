@@ -7,9 +7,11 @@ export default class ProjectCard extends Component {
         projects: [
             {
                 name: 'Online Pictionary',
-                img: '',
+                img: '', //or gif
                 desc: '',
-                url: ''
+                urlBlurb: '',
+                url: '',
+                utilized: ''
             }
         ]
     }
@@ -17,21 +19,25 @@ export default class ProjectCard extends Component {
 
     render() {
         return (
-            <div className='project-wrapper row  align-items-center'>
-                <h1 className='col-6 text-center'>
-                    {this.props.name}
-                </h1>
-                <img src={this.props.img} style={
-{                      height: '20%',
-                      width: '20%',
-                      borderRadius: '5%'}
-                }></img>
-            </div>
-            <div>
-                {
-                    this.state.projects.map(proj => <Project details={proj}></Project>)
-                }
-            </div>
+            <>
+                <div className='project-wrapper row  align-items-center'>
+                    <h1 className='col-6 text-center'>
+                        {this.props.name}
+                    </h1>
+                    <img src={this.props.img} style={
+                        {
+                        height: '20%',
+                        width: '20%',
+                        borderRadius: '5%'
+                        }
+                    }></img>
+                </div>
+                <div>
+                    {
+                        this.state.projects.map(proj => <Project details={proj}></Project>)
+                    }
+                </div>
+            </>
         )
     }
 }
