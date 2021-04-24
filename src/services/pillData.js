@@ -80,7 +80,8 @@ const pills = new Map(
 const getPills = (input) => {
     const names = {
         'front' : ['React', 'JavaScript', 'Typescript'],
-        'back' : ['Node.js', 'Express']
+        'back' : ['Node.js', 'Express'],
+        'database' : ['MongoDB']
     }
     const data = names[input].map(pillName => pills.get(pillName))
     return data
@@ -100,6 +101,8 @@ const getPills = (input) => {
             return getPills('front')
         case 'backend':
             return getPills('back')
+        case 'database':
+            return getPills('database')
     
          default:
              break;

@@ -6,8 +6,9 @@ import firstGraph from '../../graphs/first/Skills5_b.png'
 import secondGraph from '../../graphs/second/Skills4_c.png'
 import { Col, Row } from 'react-bootstrap'
 import Bio from '../Bio'
-import Pill from '../Pill'
+import ProjectRow from '../ProjectRow'
 import getPillData from '../../services/pillData'
+// import Pill from '../Pill'
 
 
 export default class Homepage extends Component {
@@ -31,11 +32,15 @@ export default class Homepage extends Component {
                 second:''
             }
         ],
-        currentImgIndex: 0,
-        imgTextTimeShown: 3.5, //seconds long for testing, prod 3
+        front: "Frontend",
+        back: 'Backend',
+        db: 'Databases',
         allPills: getPillData('all'),
         frontendPills: getPillData('frontend'),
         backendPills: getPillData('backend'),
+        dbPills: getPillData('database'),
+        currentImgIndex: 0,
+        imgTextTimeShown: 3.5, //seconds long for testing, prod 3
         graphUrls : [
             firstGraph,
             secondGraph
@@ -82,35 +87,18 @@ export default class Homepage extends Component {
                 </div>
 
                 {/* pills area an heading*/}
-                <div className='m-5'>
+                <div className='ml-4 mt-5'>
                     <h2>
-                        Technologies I like to work with
+                            Technologies I like to work with
                     </h2>
-                    <div className='d-flex'>
-                    Frontend
-                    {
-                        this.state.frontendPills.map(
-                            pill => <>
-                                <div className='pillContainer m-1'>
-                                    <Pill pillData={pill}/>
-                                </div>
-                            </>
-                        )
-                    }
-                    </div>
-                    <div className='d-flex'>  
-                    Backend                  
-                    {
-                        this.state.backendPills.map(
-                            pill => <>
-                                <div className='pillContainer m-1'>
-                                    <Pill pillData={pill}/>
-                                </div>
-                            </>
-                        )
-                    }
+                
+                    <div className='border border-info'>
+                        <ProjectRow rowName={this.state.front} pills={this.state.frontendPills}></ProjectRow>
+                        <ProjectRow rowName={this.state.back} pills={this.state.backendPills}></ProjectRow>
+                        <ProjectRow rowName={this.state.db} pills={this.state.dbPills}></ProjectRow>
                     </div>
                 </div>
+                
 
                 {/* skills graphs */}
                 <div className='ml-4 mt-5'>
