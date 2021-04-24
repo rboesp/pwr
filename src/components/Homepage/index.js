@@ -33,7 +33,9 @@ export default class Homepage extends Component {
         ],
         currentImgIndex: 0,
         imgTextTimeShown: 3.5, //seconds long for testing, prod 3
-        pills: getPillData('all'),
+        allPills: getPillData('all'),
+        frontendPills: getPillData('frontend'),
+        backendPills: getPillData('backend'),
         graphUrls : [
             firstGraph,
             secondGraph
@@ -85,8 +87,21 @@ export default class Homepage extends Component {
                         Technologies I like to work with
                     </h2>
                     <div className='d-flex'>
+                    Frontend
                     {
-                        this.state.pills.map(
+                        this.state.frontendPills.map(
+                            pill => <>
+                                <div className='pillContainer m-1'>
+                                    <Pill pillData={pill}/>
+                                </div>
+                            </>
+                        )
+                    }
+                    </div>
+                    <div className='d-flex'>  
+                    Backend                  
+                    {
+                        this.state.backendPills.map(
                             pill => <>
                                 <div className='pillContainer m-1'>
                                     <Pill pillData={pill}/>
