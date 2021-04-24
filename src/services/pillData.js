@@ -77,6 +77,15 @@ const pills = new Map(
     ]
 )
 
+const getPills = (input) => {
+    const names = {
+        'front' : ['React', 'JavaScript', 'Typescript'],
+        'back' : ['Node.js', 'Express']
+    }
+    const data = names[input].map(pillName => pills.get(pillName))
+    return data
+}
+
 /**
  * 
  * @param {Array} pillNames 
@@ -88,9 +97,9 @@ const pills = new Map(
          case 'all':
             return [...pills.values()]     
         case 'frontend':
-            return [pills.get('JavaScript'), pills.get('React')]
+            return getPills('front')
         case 'backend':
-            return [pills.get('Node.js'), pills.get('MongoDB')]
+            return getPills('back')
     
          default:
              break;

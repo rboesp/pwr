@@ -25,7 +25,7 @@ export default class Pill extends Component {
         return (
             // <div className='badge rounded-pill badge-pill'>
                 <span 
-                    className='badge rounded-pill font-exempt' 
+                    className='badge rounded-pill font-exempt banger' 
                     style={
                         {
                             backgroundColor: this.props.pillData.bgColor,

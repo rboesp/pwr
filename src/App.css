@@ -7,6 +7,11 @@ html {
     box-sizing: border-box;
 }
 
+.banger {
+    border: 1px solid red;
+    width: 8.8em;
+}
+
 .graph {
     width: 100%;
 }
