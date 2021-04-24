@@ -87,12 +87,12 @@ export default class Homepage extends Component {
                 </div>
 
                 {/* pills area an heading*/}
-                <div className='ml-4 mt-5'>
+                <div className='m-5'>
                     <h2>
                             Technologies I like to work with
                     </h2>
                 
-                    <div className='border border-info'>
+                    <div className=''>
                         <ProjectRow rowName={this.state.front} pills={this.state.frontendPills}></ProjectRow>
                         <ProjectRow rowName={this.state.back} pills={this.state.backendPills}></ProjectRow>
                         <ProjectRow rowName={this.state.db} pills={this.state.dbPills}></ProjectRow>
@@ -101,7 +101,7 @@ export default class Homepage extends Component {
                 
 
                 {/* skills graphs */}
-                <div className='ml-4 mt-5'>
+                <div className='m-5'>
                     <h2 className='p-3 '>Skills Breakdown</h2>
                     <Row className='full-width '>
                     {

@@ -7,9 +7,11 @@ export default class ProjectRow extends Component {
 
     render() {
         return (
-            <div className='border'>
-                <p className='border col-1'>{this.props.rowName}</p>
-                <div className='col row'>
+            <div className='row m-1'>
+                <p className='m-auto col-1'>
+                    {this.props.rowName}
+                </p>
+                <div className='col d-flex '>
                 {
                     this.props.pills.map(
                         pill => <>
