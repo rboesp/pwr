@@ -9,17 +9,11 @@ export default class Sidenav extends Component {
         icon_size : 35,
         nav_options : [
             {
-            name: `Bio`,
-            value: `https://img.icons8.com/dusk/${100}/000000/home.png`
-            },
+            name: `Bio`            },
             {
-            name: `Projects`,
-            value: `https://img.icons8.com/dusk/${100}/000000/group-of-projects.png`
-            },
+            name: `Projects`            },
             {
-            name: `Resume`,
-            value: `https://img.icons8.com/clouds/${this.icon_size}/000000/resume.png`
-            }
+            name: `Resume`            }
         ],
         icons: [
             {
