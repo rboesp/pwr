@@ -16,29 +16,28 @@ class App extends React.Component {
 
   render() {
     return <>
+      {/* why div around container ? */}
       <div className="main-content-container vertical ">
         <Container fluid className='p-0 vertical'>
           <Row noGutters className=''>
+
+            {/* sidenav */}
             <Col 
               // xs={12} 
               // sm={12} 
               // md={2} 
-              lg={3} 
-              className=''
+              lg={2} //**can change sidenav width here**
             >
               <Sidenav switchPage={this.switchPage}/>
             </Col>
+
+            {/* main content */}
             <Col
-              // xs={12} 
-              // sm={9} 
-              // md={9} 
-              // lg={9}
               className='full-viewport overflow'
             >
-              <MainContent 
-                currentPage={this.state.currentPage}
-                />
+              <MainContent currentPage={this.state.currentPage}/>
             </Col>
+
           </Row>
         </Container>
       </div>

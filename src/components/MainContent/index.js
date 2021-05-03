@@ -9,20 +9,13 @@ export default class MainContent extends Component {
     renderCurrentPage = () => {
         switch (this.props.currentPage) {
             case 'Home':
-                return <Homepage></Homepage>
-                break;
-        
+                return <Homepage></Homepage>        
             case 'Projects':
                 return <Projects></Projects>
-                break
-
             case 'Resume':
                 return <Resume></Resume>
-            break
-
             default:
                 return <Homepage></Homepage>
-            break;
         }
     }
 
