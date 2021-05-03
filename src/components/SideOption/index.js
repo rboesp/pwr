@@ -14,7 +14,7 @@ export default class SideOption extends Component {
                         <img className='icons' src={this.props.iconUrl} alt="sidenav option icon"></img>
                     </figure>
                 </div> */}
-                <div className='d-flex align-items-center'>
+                <div className=''>
                     <h5 className='p-1 option-names'>
                         {this.props.name}
                     </h5>
