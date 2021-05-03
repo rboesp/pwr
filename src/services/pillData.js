@@ -79,7 +79,7 @@ const pills = new Map(
 
 const getPills = (input) => {
     const names = {
-        'front' : ['React', 'JavaScript', 'Typescript'],
+        'front' : ['React', 'JavaScript'],
         'back' : ['Node.js', 'Express'],
         'database' : ['MongoDB']
     }
