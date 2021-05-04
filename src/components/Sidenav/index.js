@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import  SideOption from "../SideOption/";
 import './style.css'
 import SideIcon from '../SideIcon';
+import Resume from '../Resume';
 
 export default class Sidenav extends Component {
     state = {
@@ -9,7 +10,8 @@ export default class Sidenav extends Component {
         nav_options : [
             { name: `Bio` },
             { name: `Projects` },
-            { name: `Resume` }
+            { name: <Resume /> }
+            // { name: `Resume` }
         ],
         icons: [
             {
@@ -42,7 +44,7 @@ export default class Sidenav extends Component {
                                                 switchPage={this.props.switchPage} 
                                                 name={option.name} 
                                                 iconUrl={option.value}
-                                                    key={option.name}>
+                                                key={option.name}>
                                             </SideOption>
                                         )
                                     }
@@ -51,9 +53,16 @@ export default class Sidenav extends Component {
                         </div>
                     </div>
                     <div className=' d-flex justify-content-around '>
-                        {
-                            this.state.icons.map( icon => <SideIcon key={icon.href} href={icon.href} src={icon.src} />)
-                        }
+                    {
+                        this.state.icons.map( 
+                            icon => 
+                                <SideIcon 
+                                    key={icon.href} 
+                                    href={icon.href} 
+                                    src={icon.src} 
+                                />
+                            )
+                    }
                     </div>
                 </div>
             </div>

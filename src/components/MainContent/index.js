@@ -12,8 +12,8 @@ export default class MainContent extends Component {
                 return <Homepage></Homepage>        
             case 'Projects':
                 return <Projects></Projects>
-            case 'Resume':
-                return <Resume></Resume>
+            // case 'Resume':
+            //     return <Resume></Resume>
             default:
                 return <Homepage></Homepage>
         }

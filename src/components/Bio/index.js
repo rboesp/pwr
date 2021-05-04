@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Resume from '../Resume'
 
 export default class Bio extends Component {
     pic = () => {  
@@ -16,33 +17,23 @@ export default class Bio extends Component {
     )}
     render() {
         return (
-            <div className="">
-                <div className='ml-4'>
-                    {/* <h1>Hi I'm Robert! I'm a Software Engineer</h1> */}
-                    {/* <h1>I'm a Software Engineer</h1> */}
-                    <div className="row">
-                        <div className="text-wrapper col-md-6">
-                            <h5 className="text">
-                                <span className='size'>Welcome</span> to my personal site. I am a recent 
-                                CS grad from Oregon State University based 
-                                out of Seattle, WA.
-                            </h5>
-                        </div>
-                        <div className="text-wrapper col-md-6">
-                            <h5 className="text">
-                                <span className='size'>Currently</span> teaching Full Stack Development at 
-                                University of Washington's Full Stack Coding 
-                                Bootcamp.
-                            </h5>
-                        </div>
-                        <div className="text-wrapper col-lg-6">
-                            <h5 className="text">
-                            <span className='size'>Open</span> to software development positions in
-                                the Seattle area.
-                            </h5>
-                        </div>
-                    </div>
-                </div>
+            <div className="row">
+                <h5 className="text col-12">
+                    <span className='size'>Welcome</span> to my personal site. I am a 
+                    CS grad from Oregon State University now living 
+                    in Seattle, WA.
+                </h5>
+                <h5 className="text col">
+                    <span className='size'>Currently</span> teaching Full Stack Development at 
+                    University of Washington's Full Stack Coding 
+                    Bootcamp.
+                </h5>
+                <h5>
+                    <span className='size col'>
+                        Open
+                    </span>to software development positions in
+                    the Seattle area.
+                </h5>
             </div>
         )
     }

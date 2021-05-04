@@ -8,6 +8,7 @@ import { Col, Row } from 'react-bootstrap'
 import Bio from '../Bio'
 import ProjectRow from '../ProjectRow'
 import getPillData from '../../services/pillData'
+import Resume from '../Resume'
 // import Pill from '../Pill'
 
 
@@ -82,14 +83,14 @@ export default class Homepage extends Component {
                 </figure>
 
                 {/* about myself text */}
-                <div className='m-3'>
+                <div className='m-3 border'>
                     <Bio />
                 </div>
 
                 {/* pills area an heading*/}
-                <div className='m-5'>
+                <div className='m-3 border'>
                     <h2>
-                            Technologies I like to work with
+                        Technologies I like to work with
                     </h2>
                 
                     <div className=''>
@@ -98,11 +99,10 @@ export default class Homepage extends Component {
                         <ProjectRow rowName={this.state.db} pills={this.state.dbPills}></ProjectRow>
                     </div>
                 </div>
-                
 
                 {/* skills graphs */}
-                <div className='m-5'>
-                    <h2 className='p-3 '>Skills Breakdown</h2>
+                <div className='m-3 border'>
+                    <h2 className=''>Skills Breakdown</h2>
                     <Row className='full-width '>
                     {
                         this.state.graphUrls.map(graphUrl => {

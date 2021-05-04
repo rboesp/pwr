@@ -8,9 +8,11 @@ export default class ProjectRow extends Component {
     render() {
         return (
             <div className='row m-1'>
-                <p className='m-auto col-1'>
-                    {this.props.rowName}
-                </p>
+                <div className='col-2 m-auto'>    
+                    <p className='m-auto '>
+                        {this.props.rowName}
+                    </p>
+                </div>
                 <div className='col d-flex '>
                 {
                     this.props.pills.map(

@@ -8,18 +8,13 @@ export default class Resume extends Component {
 
     render() {
         return (
-            <div>
-                <h1 className="p-4">
-                    Resume
-                </h1>
-
-                <hr />
-
-                <div className = "resume">
-                    <a href = {Pdf} target = "_blank">Download Pdf</a>
-                </div>
-
-            </div>
+            // <div className = "resume">
+                <a href = {Pdf} target = "_blank">
+                    <h5 className=''>
+                        Resume
+                    </h5>
+                </a>
+            // </div>
         )
     }
 }
