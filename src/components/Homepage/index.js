@@ -82,13 +82,21 @@ export default class Homepage extends Component {
                     </div>
                 </figure>
 
+                <div className="ml-5 mr-5">
+                    <hr />
+                </div>
+
                 {/* about myself text */}
-                <div className='m-3 border'>
+                <div className='m-4 '>
                     <Bio />
                 </div>
 
+                <div className="ml-5 mr-5">
+                    <hr />
+                </div>
+
                 {/* pills area an heading*/}
-                <div className='m-3 border'>
+                <div className='m-4'>
                     <h2>
                         Technologies I like to work with
                     </h2>
@@ -100,8 +108,12 @@ export default class Homepage extends Component {
                     </div>
                 </div>
 
+                <div className="ml-5 mr-5">
+                    <hr />
+                </div>
+
                 {/* skills graphs */}
-                <div className='m-3 border'>
+                <div className='m-4 '>
                     <h2 className=''>Skills Breakdown</h2>
                     <Row className='full-width '>
                     {
