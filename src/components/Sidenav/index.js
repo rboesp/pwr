@@ -2,16 +2,14 @@ import React, { Component } from 'react'
 import  SideOption from "../SideOption/";
 import './style.css'
 import SideIcon from '../SideIcon';
-import Resume from '../Resume';
 
 export default class Sidenav extends Component {
     state = {
         icon_size : 35,
         nav_options : [
-            { name: `Bio` },
-            { name: `Projects` },
-            { name: <Resume /> }
-            // { name: `Resume` }
+            { name: `Bio`, url:'/' },
+            { name: `Projects`, url:'/projects' },
+            { name: `Resume` }
         ],
         icons: [
             {
@@ -42,7 +40,8 @@ export default class Sidenav extends Component {
                                         return ( 
                                             <SideOption 
                                                 name={option.name} 
-                                                iconUrl={option.value}
+                                                url={option.url}
+                                                // iconUrl={option.value}
                                                 key={option.name}>
                                             </SideOption>
                                         )
