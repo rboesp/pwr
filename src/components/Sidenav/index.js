@@ -41,7 +41,6 @@ export default class Sidenav extends Component {
                                     option => {
                                         return ( 
                                             <SideOption 
-                                                switchPage={this.props.switchPage} 
                                                 name={option.name} 
                                                 iconUrl={option.value}
                                                 key={option.name}>
