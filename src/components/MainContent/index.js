@@ -22,7 +22,7 @@ export default class MainContent extends Component {
     render() {
         return (
             <main className=' full-height main-content'>
-                <div className='bg-light'>
+                <div className=''>
                     {
                         this.renderCurrentPage()
                     }
