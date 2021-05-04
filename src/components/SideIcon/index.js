@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SideIcon extends Component {
-    render() {
-        return (
-            <figure className='sideBtns'>
-                <a target="_blank" href={this.props.href}>
-                    <img src={this.props.src} />
-                </a>
-            </figure>
-        )
-    }
+function SideIcon({href, src}) {
+    return (
+        <figure className='sideBtns'>
+            <a 
+                target="_blank" 
+                href={href}>
+                <img src={src} />
+            </a>
+        </figure>
+    )
 }
+
+export default SideIcon

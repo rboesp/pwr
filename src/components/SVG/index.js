@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SVG extends Component {
-    render() {
-        return (
-            <svg 
-                width={this.props.width} 
-                height={this.props.height}
-                viewBox={this.props.viewBox}
-                version={this.props.version}
-                xmlns={this.props.xmlns} 
-                xmlnsXlink={this.props.xmlnsXlink}
-                preserveAspectRatio={this.props.preserveAspectRatio}>
-                {this.props.gText()}
-            </svg>
-        )
-    }
+export default function SVG(props) {
+    return (
+        <svg 
+            width={props.width} 
+            height={props.height}
+            viewBox={props.viewBox}
+            version={props.version}
+            xmlns={props.xmlns} 
+            xmlnsXlink={props.xmlnsXlink}
+            preserveAspectRatio={props.preserveAspectRatio}>
+            {props.gText()}
+        </svg>
+    )
 }
