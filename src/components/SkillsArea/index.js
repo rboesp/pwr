@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SkillsArea extends Component {
-    render() {
+export default function SkillsArea  {
+    
         return (
             <div>
                 
