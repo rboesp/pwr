@@ -20,7 +20,7 @@ export default function ProjectCard({img, name})  {
                 }></img>
             </div>
             <div className='m-5 p-5 border border-primary'>
-                <Row class="">
+                <Row className="">
                     {
                         getProjects()
                         .map(
