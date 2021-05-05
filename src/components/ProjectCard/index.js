@@ -24,8 +24,8 @@ export default function ProjectCard({img, name})  {
                     {
                         getProjects()
                         .map(
-                            proj => 
-                                <ProjectComponent details={proj} />
+                            (proj, i) => 
+                                <ProjectComponent key={i} details={proj} />
                         )
                     }
                 </Row>

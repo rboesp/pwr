@@ -3,6 +3,8 @@ import Pill from '../Pill'
 import {Col} from 'react-bootstrap'
 
 export default function Project(props)  {
+    console.log('************')
+    console.log(props)
     const {
         details,
         } = props;
@@ -11,7 +13,7 @@ export default function Project(props)  {
         img,
         desc,
         urlBlurb,
-        // url,
+        url,
         // utilized,
         pills
     } = details;
@@ -34,18 +36,20 @@ export default function Project(props)  {
                 <div className='d-flex justify-content-center'>
                     {
                         pills.map(
-                            pill => <>
-                                <div className='pillContainer m-1'>
-                                    <Pill pillData={pill}/>
-                                </div>
-                            </>
+                            (pill, i) => {
+                                return (
+                                    <div key={i} className='pillContainer m-1'>
+                                        <Pill pillData={pill}/>
+                                    </div>
+                                )
+                            }
                         )
                     }
                 </div>
                 <p className="card-text ">
                     {desc}
                 </p>
-                <a href={img} target="_blank" className="badge" rel="noreferrer">
+                <a href={url} target="_blank" className="badge" rel="noreferrer">
                     {urlBlurb}
                 </a>
             </div>

@@ -2,22 +2,21 @@ import React from 'react'
 import SVG from '../SVG'
 
 const getG = (pillData) => {
-    console.log(pillData)
+    // console.log(pillData)
     return (
-        <>
-            <g>
-                {
-                    pillData.d_s.map((d,i) => {
-                        return (
-                            <path 
-                                d={d}
-                                fill={pillData.fills[i]}>  
-                            </path>
-                        )
-                    })
-                }
-            </g>
-        </>
+        <g>
+            {
+                pillData.d_s.map((d, i) => {
+                    return (
+                        <path 
+                            key={i}
+                            d={d}
+                            fill={pillData.fills[i]}>  
+                        </path>
+                    )
+                })
+            }
+        </g>
     )
 }
 

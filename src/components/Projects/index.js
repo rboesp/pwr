@@ -21,6 +21,7 @@ function Projects()  {
                         tech => {
                             return (
                             <ProjectCard 
+                              key={tech.name}
                               name={tech.name} 
                               img={tech.img}
                             />

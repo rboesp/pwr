@@ -119,9 +119,9 @@ export default class Homepage extends Component  {
                 <h2 className=''>Skills Breakdown</h2>
                 <Row className='full-width '>
                 {
-                    this.state.graphUrls.map(graphUrl => {
+                    this.state.graphUrls.map((graphUrl,i) => {
                         return (
-                            <Col className='' xs={12} sm={12} md={12} lg={6}>
+                            <Col key={i} xs={12} sm={12} md={12} lg={6}>
                                 <Graph graphUrl={graphUrl}/>
                             </Col>
                         )
