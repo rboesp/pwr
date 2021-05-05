@@ -13,11 +13,10 @@ export default function ProjectRow({rowName, pills})  {
             <div className='col d-flex '>
             {
                 pills.map(
-                    (pill, i) => <>
+                    (pill, i) =>
                         <div key={i} className='pillContainer m-1'>
-                            <Pill pillData={pill}/>
+                            <Pill  pillData={pill}/>
                         </div>
-                    </>
                 )
             }
             </div>
