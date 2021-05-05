@@ -5,21 +5,21 @@ import {Col} from 'react-bootstrap'
 export default function Project(props)  {
     const {
         details,
-        } = this.props;
+        } = props;
     const {
         name,
         img,
         desc,
         urlBlurb,
-        url,
-        utilized,
+        // url,
+        // utilized,
         pills
     } = details;
     return (
         <Col xs={12} >
             <div class="card-body border border-warning text-center m-3">
                         <figure className=''>
-                        <img className='card-img-top'
+                        <img alt={name} className='card-img-top'
                             style={
                                 {
                                     height: '250px',
@@ -45,7 +45,7 @@ export default function Project(props)  {
                         <p class="card-text ">
                             {desc}
                         </p>
-                        <a href={img} target="_blank" class="badge">
+                        <a href={img} target="_blank" class="badge" rel="noreferrer">
                             {urlBlurb}
                         </a>
                     </div>

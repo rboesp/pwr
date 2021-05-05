@@ -9,7 +9,7 @@ const technologies = [
 ]
 
 
-function Projects({})  {
+function Projects()  {
     return ( 
         <div className='project-page-container border border-danger m-5 bg-white'>
             <div className='projects-title'>
