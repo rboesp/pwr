@@ -1,5 +1,5 @@
 import React from "react"
-import ProjectComponent from "../Project"
+import Project from "../Project"
 import { Row } from "react-bootstrap"
 import getProjects from "../../services/projectData"
 
@@ -20,7 +20,7 @@ export default function ProjectCard({ img, name }) {
             <div className="p-4">
                 <Row className="">
                     {getProjects().map((proj, i) => (
-                        <ProjectComponent key={i} details={proj} />
+                        <Project key={i} details={proj} />
                     ))}
                 </Row>
             </div>

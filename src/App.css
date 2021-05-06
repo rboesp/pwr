@@ -58,6 +58,10 @@ div.no-padding {
     height: 25vh;
 }
 
+.card-wrapper {
+    border: 2px solid lightgray;
+}
+
 div.full-viewport {
     height: 100vh;
 }
