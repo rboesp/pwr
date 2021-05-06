@@ -7,6 +7,10 @@
     /* border: 1px solid red;s */
 }
 
+.side-name {
+    max-width: 100%;
+}
+
 /* .sideBtns:hover {
     background-color: rgb(27, 112, 112);
 }

@@ -1,6 +1,5 @@
 import React /*, { useRef }*/ from "react"
 import SideOption from "../SideOption/"
-import "./style.css"
 import SideIcon from "../SideIcon"
 
 const nav_options = {
@@ -23,9 +22,10 @@ export default function Sidenav(props) {
     return (
         <div className="bg-dark sidenav-border sidenav-height ">
             <div className=" full-height d-flex flex-column justify-content-between">
-                <div className=" full-width p-2">
-                    <h1 className="p-0 text-center white">Robert Boespflug</h1>
-                    <h6 className="p-0 text-center white">Software Developer </h6>
+                <div className=" full-width p-2 d-flex flex-column">
+                    <h1 className="p-0 text-center white mb-0">Robert Boespflug</h1>
+                    {/* <h1 className="p-1 text-center white">Boespflug</h1> */}
+                    <h6 className="p-0 text-center white mb-0">Software Developer </h6>
                     <h6 className="p-0 text-center white">Seattle, WA</h6>
                 </div>
                 <div id="basic-navbar-nav">
@@ -39,6 +39,7 @@ export default function Sidenav(props) {
                                 // ref={divRef}
                                 // onFocus={(e) => (e.target.style.backgroundColor = "red")}
                                 // tabIndex={i}
+                                className=""
                                 key={option.name}
                             >
                                 <SideOption
@@ -51,7 +52,7 @@ export default function Sidenav(props) {
                         )
                     })}
                 </div>
-                <div className=" d-flex justify-content-around ">
+                <div className=" d-flex justify-content-center mt-1">
                     {nav_options.social_icons.map((icon) => (
                         <SideIcon key={icon.href} href={icon.href} src={icon.src} />
                     ))}

@@ -22,9 +22,8 @@ import "./style.css"
 const graphUrls = [firstGraph, secondGraph]
 
 const timedBlurbText = [
-    { first: "Software", second: "Developer" },
+    { first: "Software", second: "Engineer" },
     { first: "Full-Stack", second: "Developer" },
-    { first: "Electronics", second: "Nerd" },
     { first: "Husband", second: "& Father" },
 ]
 
