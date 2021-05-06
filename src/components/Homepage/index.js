@@ -22,27 +22,15 @@ import "./style.css"
 const graphUrls = [firstGraph, secondGraph]
 
 const timedBlurbText = [
-    {
-        first: "Software",
-        second: "Developer",
-    },
-    {
-        first: "Full-Stack",
-        second: "Developer",
-    },
-    {
-        first: "Electronics",
-        second: "Nerd",
-    },
-    {
-        first: "Husband",
-        second: "",
-    },
+    { first: "Software", second: "Developer" },
+    { first: "Full-Stack", second: "Developer" },
+    { first: "Electronics", second: "Nerd" },
+    { first: "Husband", second: "& Father" },
 ]
 
 const timedBlurbOptions = {
     currentImgIndex: 0,
-    imgTextTimeShown: 3.5, //seconds
+    imgTextTimeShown: 2.3, //seconds
 }
 
 const pillData = {
@@ -140,7 +128,7 @@ export default function Homepage(props) {
 
             <HorizontalBreak />
 
-            {/* pills area an heading*/}
+            {/* pills area and heading*/}
             <Section component={<Tech />} />
 
             <HorizontalBreak />
