@@ -101,11 +101,37 @@ span {
     font-family: "Rubik", sans-serif;
 }
 
+@media (min-width: 320px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 1.5em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.1em;
+        /* font-weight: bold; */
+    }
+}
+/* @media (min-width:641px)  { portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones } */
+/* @media (min-width:961px)  { tablet, landscape iPad, lo-res laptops ands desktops } */
+/* @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+/* @media (min-width:1281px) { hi-res laptops and desktops } */
+
 @media (min-width: 992px) {
     div.sidenav-height {
         height: 100vh;
     }
     .overflow {
         overflow-y: scroll;
+    }
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 3.5em;
+        /* font-weight: bold; */
     }
 }
