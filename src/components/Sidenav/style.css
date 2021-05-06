@@ -1,7 +1,11 @@
 .sidenav-border {
-    border-right: 2px solid orange;
+    /* border-right: 2px solid orange; */
 }
 
 .sidenav {
     /* background-color: #f9f9ed; */
+}
+
+div:focus {
+    background-color: aqua;
 }

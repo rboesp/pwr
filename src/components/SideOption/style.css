@@ -3,14 +3,14 @@
 }
 
 .sideBtns {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* border: 1px solid red;s */
 }
 
-.sideBtns:hover {
+/* .sideBtns:hover {
     background-color: rgb(27, 112, 112);
 }
 
 .sideBtns:active {
     background-color: rgb(7, 22, 36);
-}
+} */
