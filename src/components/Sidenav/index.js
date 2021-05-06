@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React /*, { useRef }*/ from "react"
 import SideOption from "../SideOption/"
 import "./style.css"
 import SideIcon from "../SideIcon"
@@ -32,19 +32,20 @@ export default function Sidenav(props) {
                     {nav_options.nav_routes.map((option, i) => {
                         return (
                             <div
-                            // onClick={() => {
-                            //     console.log("hello" + Math.random())
-                            //     divRef.current.focus()
-                            // }}
-                            // ref={divRef}
-                            // onFocus={(e) => (e.target.style.backgroundColor = "red")}
-                            // tabIndex={i}
+                                // onClick={() => {
+                                //     console.log("hello" + Math.random())
+                                //     divRef.current.focus()
+                                // }}
+                                // ref={divRef}
+                                // onFocus={(e) => (e.target.style.backgroundColor = "red")}
+                                // tabIndex={i}
+                                key={option.name}
                             >
                                 <SideOption
                                     name={option.name}
                                     url={option.url}
                                     // iconUrl={option.value}
-                                    key={option.name}
+                                    // key={option.name}
                                 ></SideOption>
                             </div>
                         )
