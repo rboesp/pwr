@@ -6,7 +6,7 @@ import getProjects from "../../services/projectData"
 export default function ProjectCard({ img, name }) {
     return (
         <>
-            <div className="project-wrapper row  align-items-center">
+            {/* <div className="project-wrapper row  align-items-center">
                 <h1 className="col-6">{name}</h1>
                 <img
                     src={img}
@@ -16,8 +16,8 @@ export default function ProjectCard({ img, name }) {
                         borderRadius: "5%",
                     }}
                 ></img>
-            </div>
-            <div className="m-5 p-5">
+            </div> */}
+            <div className="p-4">
                 <Row className="">
                     {getProjects().map((proj, i) => (
                         <ProjectComponent key={i} details={proj} />

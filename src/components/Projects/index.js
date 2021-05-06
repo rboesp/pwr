@@ -10,11 +10,11 @@ const technologies = [
 
 function Projects() {
     return (
-        <div className="project-page-container m-5 bg-white">
+        <div className="project-page-container p-4 bg-white">
             <div className="projects-title">
                 <h1>Projects</h1>
             </div>
-            <div className="projects-area m-5">
+            <div className="projects-area">
                 {technologies.map((tech) => (
                     <ProjectCard key={tech.name} name={tech.name} img={tech.img} />
                 ))}

@@ -17,7 +17,7 @@ export default function Project(props) {
     } = details
     return (
         <Col xs={12}>
-            <div className="card-body  text-center m-3">
+            <div className="card-body m-3">
                 <figure className="">
                     <img
                         alt={name}
@@ -29,7 +29,7 @@ export default function Project(props) {
                     ></img>
                 </figure>
                 <h5 className="card-title">{name}</h5>
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-start">
                     {pills.map((pill, i) => {
                         return (
                             <div key={i} className="pillContainer m-1">
