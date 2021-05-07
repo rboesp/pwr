@@ -8,8 +8,7 @@ const projects = [
     {
         name: "Online Whiteboard",
         img: "", //or gif
-        desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Share a whiteboard with someone over the internet!",
         urlBlurb: "Play online now!",
         url: "", //where to find project or source code
         pills: getPillData(["React", "Node.js", "Express"]),
@@ -18,8 +17,7 @@ const projects = [
     {
         name: "Country Comparison Tool",
         img: "", //or gif
-        desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Tool that shows the link between income and lifespan. Size of the bubbles is population.",
         urlBlurb: "Use it now!",
         url: "https://rboesp.github.io/Interactive-Visualization/",
         pills: getPillData(["Chart.js", "Node.js", "Express"]),
@@ -28,8 +26,7 @@ const projects = [
     {
         name: "Network Pong",
         img: "", //or gif
-        desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Play pong over the internet!",
         urlBlurb: "Use it now!",
         url: "https://networking-pong.herokuapp.com/",
         pills: getPillData(["Node.js", "Express"]),

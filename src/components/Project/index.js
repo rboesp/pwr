@@ -30,7 +30,7 @@ export default function Project(props) {
                             )
                         })}
                     </div>
-                    <p className="card-text ">{desc}</p>
+                    <p className="card-text mt-2">{desc}</p>
                     <a href={url} target="_blank" className="badge" rel="noreferrer">
                         {urlBlurb}
                     </a>
