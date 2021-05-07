@@ -23,6 +23,9 @@ export default function ProjectCard({ img, name }) {
                         <Project key={i} details={proj} />
                     ))}
                 </Row>
+                {/* <a href="https://imgbb.com/">
+                    <img src="https://i.ibb.co/WKZ6qfv/ezgif-com-gif-maker.gif" alt="ezgif-com-gif-maker" border="0" />
+                </a> */}
             </div>
         </>
     )

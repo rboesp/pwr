@@ -2,10 +2,6 @@ import React from "react"
 import Pill from "../Pill"
 import { Col } from "react-bootstrap"
 
-function rand() {
-    return Math.floor(Math.random() * (1025 - 1000 + 1)) + 1000
-}
-
 export default function Project(props) {
     console.log("************")
     console.log(props)
@@ -16,6 +12,7 @@ export default function Project(props) {
         desc,
         urlBlurb,
         url,
+        src,
         // utilized,
         pills,
     } = details
@@ -40,7 +37,7 @@ export default function Project(props) {
                 </div>
                 <figure className="col-4 m-auto ">
                     <img
-                        src={`https://picsum.photos/id/${rand()}/200/200`}
+                        src={src}
                         alt={name}
                         className="card-img-top"
                         style={
