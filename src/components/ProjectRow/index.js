@@ -5,7 +5,9 @@ export default function ProjectRow({ rowName, pills }) {
     return (
         <div className="m-3">
             <div className="col-1 mb-1">
-                <h6 className="m-auto ">{rowName}</h6>
+                <h6 style={{ fontFamily: "rubik" }} className="m-auto ">
+                    {rowName}
+                </h6>
             </div>
             <div className="col d-flex ml-">
                 {pills.map((pill, i) => (

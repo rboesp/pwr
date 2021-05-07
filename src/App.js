@@ -3,7 +3,7 @@ import "./App.css"
 import { Container, Col, Row } from "react-bootstrap"
 import Sidenav from "./components/Sidenav"
 import Homepage from "./components/Homepage"
-import Projects from "./components/Projects"
+import Projects from "./components/Projectspage"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 const routes = [

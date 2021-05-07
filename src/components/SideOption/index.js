@@ -6,7 +6,7 @@ import Pdf from "../../resume_pdf/Boespflug_Resume.pdf"
 const sideOptionClassNames = "p-2 sideBtns d-flex justify-content-center"
 
 function OptionName({ name }) {
-    return <h4 style={{ color: "whitesmoke" }}>{name}</h4>
+    return <h4 style={{ color: "whitesmoke", fontFamily: "Rubik" }}>{name}</h4>
 }
 
 export default function SideOption({ name, url }) {

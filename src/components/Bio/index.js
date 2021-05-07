@@ -1,19 +1,26 @@
 import React from "react"
 
+function Blurb({ text }) {
+    return (
+        <p
+            style={{
+                fontSize: "larger",
+                fontFamily: "rubik",
+            }}
+            className="col-12 m-1"
+        >
+            {text}
+        </p>
+    )
+}
+
 export default function Bio(props) {
     return (
-        <div className="row">
-            <h4 className="text col-12">
-                <span className="size">Welcome</span> to my personal site. I am a CS grad from Oregon State University now living in
-                Seattle, WA.
-            </h4>
-            <h4 className="text col-12">
-                <span className="size">Currently</span> teaching Full Stack Development at University of Washington's Full Stack Coding
-                Bootcamp.
-            </h4>
-            <h4 className="text col-12">
-                <span className="size mr-1">Open</span>to software development positions in the Seattle area.
-            </h4>
+        <div className="row p-4">
+            {/* <Blurb text="Welcome to my personal site." /> */}
+            <Blurb text="CS grad from Oregon State University now living in Seattle, WA." />
+            <Blurb text="Currently teaching Full Stack Development at University of Washington's Full Stack Coding Bootcamp." />
+            <Blurb text="Open to software development positions in the Seattle area." />
         </div>
     )
 }

@@ -56,7 +56,7 @@ const Section = ({ component }) => <div className="m-4 ">{component}</div>
 
 const Tech = () => (
     <>
-        <h2>Technologies I like to work with</h2>
+        {/* <h2>Technologies I like to work with</h2> */}
 
         <div className="">
             <ProjectRow rowName={pillData.front} pills={pillData.frontendPills}></ProjectRow>
@@ -68,7 +68,7 @@ const Tech = () => (
 
 const Graphs = () => (
     <>
-        <h2 className="">Skills Breakdown</h2>
+        {/* <h2 className="">Skills Breakdown</h2> */}
         <Row className="full-width ">
             {graphUrls.map((graphUrl, i) => {
                 return (
@@ -109,6 +109,14 @@ const TimedBlurb = () => {
     )
 }
 
+function Heading({ name }) {
+    return (
+        <h1 className="pl-4 pt-4" style={{ fontFamily: "Pacifico" }}>
+            {name}
+        </h1>
+    )
+}
+
 export default function Homepage(props) {
     return (
         <>
@@ -120,15 +128,21 @@ export default function Homepage(props) {
                 </div>
             </figure>
 
+            <Heading name="Bio" />
+
             <HorizontalBreak />
 
             {/* about myself text */}
             <Section component={<Bio />} />
 
+            <Heading name="Skills Breakdown" />
+
             <HorizontalBreak />
 
             {/* pills area and heading*/}
             <Section component={<Tech />} />
+
+            <Heading name="Technologies I like to work with" />
 
             <HorizontalBreak />
 

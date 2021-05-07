@@ -17,16 +17,26 @@ const nav_options = {
     ],
 }
 
+function Blurb({ text }) {
+    return (
+        <h6 style={{ fontFamily: "rubik" }} className="p-0 text-center white mb-0">
+            {text}
+        </h6>
+    )
+}
+
 export default function Sidenav(props) {
     // const divRef = useRef(null)
     return (
         <div className="bg-dark sidenav-border sidenav-height ">
             <div className=" full-height d-flex flex-column justify-content-between">
                 <div className=" full-width p-2 d-flex flex-column">
-                    <h1 className="p-0 text-center white mb-0">Robert Boespflug</h1>
+                    <h1 style={{ fontFamily: "rubik" }} className="p-0 text-center white mb-0">
+                        Robert Boespflug
+                    </h1>
                     {/* <h1 className="p-1 text-center white">Boespflug</h1> */}
-                    <h6 className="p-0 text-center white mb-0">Software Developer </h6>
-                    <h6 className="p-0 text-center white">Seattle, WA</h6>
+                    <Blurb text="Software Developer" />
+                    <Blurb text="Seattle, WA" />
                 </div>
                 <div id="basic-navbar-nav">
                     {nav_options.nav_routes.map((option, i) => {
