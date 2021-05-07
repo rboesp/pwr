@@ -46,7 +46,7 @@ const pillData = {
 
 const HorizontalBreak = () => {
     return (
-        <div className="ml-5 mr-5">
+        <div className="ml-4 mr-4">
             <hr />
         </div>
     )
