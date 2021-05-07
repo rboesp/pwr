@@ -135,14 +135,14 @@ export default function Homepage(props) {
             {/* about myself text */}
             <Section component={<Bio />} />
 
-            <Heading name="Skills Breakdown" />
+            <Heading name="Technologies I like to work with" />
 
             <HorizontalBreak />
 
             {/* pills area and heading*/}
             <Section component={<Tech />} />
 
-            <Heading name="Technologies I like to work with" />
+            <Heading name="Skills Breakdown" />
 
             <HorizontalBreak />
 
