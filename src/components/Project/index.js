@@ -21,7 +21,7 @@ export default function Project(props) {
             <div className="card-wrapper row m-3">
                 <div className="card-body col-8 ">
                     <h5 className="card-title">{name}</h5>
-                    <div className="d-flex justify-content-start">
+                    <div className="pill-row d-flex justify-content-start">
                         {pills.map((pill, i) => {
                             return (
                                 <div key={i} className="pillContainer m-1">
