@@ -113,18 +113,69 @@ span {
     }
 }
 
+@media (min-width: 253px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 0.9em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 320px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 1.1em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 398px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 1.3em;
+        /* font-weight: bold; */
+    }
+}
+
 @media (min-width: 481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 1.7em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 586px) {
     .top-left > * {
         /* font-family: "Pacifico"; */
         font-size: 2.1em;
         /* font-weight: bold; */
     }
 }
-/* @media (min-width:641px)  { portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones } */
-/* @media (min-width:961px)  { tablet, landscape iPad, lo-res laptops ands desktops } */
-/* @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
-/* @media (min-width:1281px) { hi-res laptops and desktops } */
+
+@media (min-width: 668px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.3em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 752px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.4em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 866px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.7em;
+        /* font-weight: bold; */
+    }
+}
 
 @media (min-width: 992px) {
     div.sidenav-height {
@@ -133,6 +184,21 @@ span {
     .overflow {
         overflow-y: scroll;
     }
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.5em;
+        /* font-weight: bold; */
+    }
+}
+
+@media (min-width: 1025px) {
+    .top-left > * {
+        /* font-family: "Pacifico"; */
+        font-size: 2.7em;
+        /* font-weight: bold; */
+    }
+}
+@media (min-width: 1281px) {
     .top-left > * {
         /* font-family: "Pacifico"; */
         font-size: 3.5em;
