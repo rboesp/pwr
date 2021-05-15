@@ -1,9 +1,5 @@
 import getPillData from "./pillData.js"
 
-function rand() {
-    return Math.floor(Math.random() * (1025 - 1000 + 1)) + 1000
-}
-
 const projects = [
     {
         name: "Online Blackboard 🖊️",
