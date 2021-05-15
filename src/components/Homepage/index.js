@@ -13,7 +13,7 @@ import secondGraph from "../../graphs/second/Skills4_c.png"
 import coverImg from "../../CoverImg/cover2.jpg"
 
 //services
-import getPillData from "../../services/pillData"
+import getPillData from "../../services/pillData.js"
 
 //stylesheet
 import "./style.css"

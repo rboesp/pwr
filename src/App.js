@@ -14,7 +14,7 @@ const routes = [
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             {/* //why div around container ? */}
             <div className="main-content-container vertical ">
                 <Container fluid className="p-0 vertical">
