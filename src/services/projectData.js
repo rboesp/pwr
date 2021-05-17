@@ -2,14 +2,6 @@ import getPillData from "./pillData.js"
 
 const projects = [
     {
-        name: "Online Blackboard 🖊️",
-        desc: "Draw and have fun by sharing a blackboard canvas with anyone in the world! (Use with 👨‍👨‍👧‍👧 for full effect 😃)",
-        urlBlurb: "Draw now!",
-        url: "https://shared-blackboard.herokuapp.com/", //where to find project or source code
-        pills: getPillData(["JavaScript", "Node.js", "Express"]),
-        src: `https://i.ibb.co/x6BLnjx/blackboard.png`,
-    },
-    {
         name: "Country Comparison Tool 🌎",
         desc: "Tool that shows the link between income and lifespan. Size of the bubbles is population.",
         urlBlurb: "Use it now!",
@@ -18,8 +10,15 @@ const projects = [
         src: "https://i.ibb.co/4WSwzwc/ezgif-com-gif-maker-1.gif",
     },
     {
+        name: "Online Blackboard 🖊️",
+        desc: "Draw and have fun by sharing a blackboard canvas with anyone in the world! (Use with 👨‍👨‍👧‍👧 for full effect 😃)",
+        urlBlurb: "Draw now!",
+        url: "https://rboesp.github.io/shared-blackboard/", //where to find project or source code
+        pills: getPillData(["JavaScript", "Node.js", "Express"]),
+        src: `https://i.ibb.co/x6BLnjx/blackboard.png`,
+    },
+    {
         name: "Online Pong 🏓",
-        img: "", //or gif
         desc: "Play pong with people over the internet!",
         urlBlurb: "Play now!",
         url: "https://networking-pong.herokuapp.com/",
