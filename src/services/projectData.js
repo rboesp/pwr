@@ -21,7 +21,7 @@ const projects = [
         name: "Online Pong 🏓",
         desc: "Play pong with people over the internet!",
         urlBlurb: "Play now!",
-        url: "https://rboesp.github.io/Networking-Pong/,
+        url: "https://rboesp.github.io/Networking-Pong/",
         pills: getPillData(["Node.js", "Express"]),
         src: `https://i.ibb.co/KVX9Rhw/pong-gif2.gif`,
     },
